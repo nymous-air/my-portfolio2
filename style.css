@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background: rgba(0, 0, 0, 0.6); /* transparent to show stars */
+    backdrop-filter: blur(6px);     /* glass effect */
+    padding: 1.2rem 2rem;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #f72585, 0 0 20px #7209b7; /* glowing effect */
+    margin-bottom: 0.5rem;
+  }
+  
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  nav a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #f72585;
+    transition: width 0.3s;
+    margin: auto;
+  }
+  
+  nav a:hover {
+    color: #f72585;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 1rem;
+  }
+  
+  .grid img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  #about {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    line-height: 1.8;
+  }
+  
+  #about h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+  }
+  
+  #about .about-text p {
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    color: #444;
+    text-align: justify;
+  }
+  
+  #about .about-text strong {
+    color: #000;
+  }
+  
+  #about .about-text em {
+    color: #555;
+    font-style: italic;
+  }
+  
+  #about .highlight {
+    color: #e63946; /* Accent color to draw attention */
+    font-weight: bold;
+  }
+  
+  #gallery {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+  }
+  
+  #gallery h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
+  
+  .grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  #stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* behind everything */
+    background: black;
+  }
+  
+  header nav {
+    display: flex;              /* Put nav items in a row */
+    justify-content: center;    /* Center them */
+    gap: 2rem;                  /* Space between links */
+    margin-top: 0.5rem;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #f72585; /* glowing pink accent */
+  }
+
+  #contact {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: rgba(0,0,0,0.6);
+    border-top: 2px solid rgba(255,255,255,0.1);
+    margin-top: 3rem;
+  }
+  
+  #contact h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  #contact p {
+    color: #ccc;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .contact-links a {
+    margin: 0 15px;
+    font-size: 2rem;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-links a:hover {
+    color: #f72585; /* glowing accent */
+    transform: scale(1.2);
+  }
+  
