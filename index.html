@@ -8,11 +8,13 @@
   <title>My Art Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<canvas id="stars"></canvas>
 
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<canvas id="stars"></canvas>
+  
 <body>
   <header>
-    <h1>My Art Portfolio</h1>
+    <h1>Khanyisizwe's Art</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#gallery">Gallery</a>
@@ -39,22 +41,62 @@
   
 
   <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="grid">
-      <!-- Existing artworks -->
-      <img src="images/Lo.jpg" alt="Artwork 1">
-      <img src="images/Moon.jpg" alt="Artwork 2">
-      <img src="images/Astro.jpg" alt="Artwork 3">
-  
-      <!-- Your uploaded artworks -->
-      <img src="images/goat.jpg" alt="Artwork 4">
-      <img src="images/Lo.jpg" alt="Artwork 5">
-  
-      <!-- Placeholders for adding two more -->
-      <img src="images/" alt="Artwork 6 (add later)">
-      <img src="images/" alt="Artwork 7 (add later)">
-    </div>
-  </section>
+  <h2>Gallery</h2>
+  <div class="grid">
+    <img src="images/Lo.jpg" alt="Artwork 1"
+         data-title="Luminous Orbit"
+         data-desc="An abstract exploration of cosmic balance, using layered lines and textures.">
+
+    <img src="images/Moon.jpg" alt="Artwork 2"
+         data-title="Moonlight Chaos"
+         data-desc="Inspired by lunar cycles, this work mixes chaos and rhythm in stark contrasts.">
+
+    <img src="images/Astro.jpg" alt="Artwork 3"
+         data-title="Astro Frequencies"
+         data-desc="A futuristic reflection on identity and sound in space.">
+
+    <img src="images/goat.jpg" alt="Artwork 4"
+         data-title="The Goat"
+         data-desc="A surreal depiction of strength and myth in Afrofuturist style.">
+
+    <img src="images/goat.png" alt="Artwork 5"
+         data-title="Digital Goat"
+         data-desc="Experiment with pixel textures and bold brush patterns.">
+
+    <img src="images/Six.png" alt="Artwork 6"
+         data-title="Sixth Dimension"
+         data-desc="Exploring hidden planes of memory and cultural imagination.">
+
+    <img src="images/Sven.png" alt="Artwork 7"
+         data-title="Sven"
+         data-desc="Playful minimalism combined with bold contrast.">
+
+    <img src="images/Sen.jpg" alt="Artwork 8"
+         data-title="Sen"
+         data-desc="Afrofuturist portrait blending human identity with cosmic abstraction.">
+
+    <img src="images/head.png" alt="Artwork 9"
+         data-title="Headspace"
+         data-desc="A textured brushwork portrait inspired by Cy Twombly.">
+        </div>
+      </section>
+      
+      <!-- Lightbox overlay -->
+      <div id="lightbox" aria-hidden="true">
+        <button class="close" aria-label="Close">&times;</button>
+        <button class="prev" aria-label="Previous">&#10094;</button>
+      
+        <div class="lightbox-inner">
+          <img id="lightbox-img" class="lightbox-content" alt="">
+          <div id="lightbox-caption">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-desc"></p>
+          </div>
+        </div>
+      
+        <button class="next" aria-label="Next">&#10095;</button>
+      </div>
+
   
 
   <section id="contact">
@@ -62,10 +104,10 @@
     <p>Let’s connect! You can reach me via email or follow my work on social platforms:</p>
   
     <div class="contact-links">
-      <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+      <a href="mailto:mkhanyisizwe@gmail.com"><i class="fas fa-envelope"></i></a>
       <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
       <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://instagram.com/nymous_air" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
   </section>
   
